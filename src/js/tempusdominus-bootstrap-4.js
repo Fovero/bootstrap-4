@@ -1140,7 +1140,7 @@ const TempusDominusBootstrap4 = ($ => { // eslint-disable-line no-unused-vars
         }
         TempusDominusBootstrap4._jQueryInterface.call($target, '_change', event);
     }).on(DateTimePicker.Event.BLUR, `.${DateTimePicker.ClassName.INPUT}`, function (event) {
-        const $target = getSelectorFromElement($(this)), config = $target.data(DateTimePicker.DATA_KEY);
+        const $target = getSelectorFromElement($(this));
         if ($target.length === 0) {
             return;
         }
